@@ -9,7 +9,7 @@ const items = [];
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb+srv://dataAdmin:YxRKT2006-@sweden1.ap8jijh.mongodb.net/');
+  await mongoose.connect('mongodb+srv://dataAdmin:YxRKT2006-@sweden1.ap8jijh.mongodb.net/?retryWrites=true&w=majority');
   // await mongoose.connect('mongodb://127.0.0.1:27017/todoList');
 
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
